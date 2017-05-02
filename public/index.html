@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Finder challenge</title>
+    <meta charset="utf-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet" type="text/css">
+    <link href="/vendor/pure/pure-min.css" rel="stylesheet">
+    <link href="/styles/index.css" rel="stylesheet">
+    <script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <div class="app pure-g">
+      <header class="pure-u-1">
+        <div class="pure-u-1-3">
+          <h1 class="logo">Finder challenge!</h1>
+        </div>
+        <div class="pure-u-15-24">
+          <div class="search-form">
+            <form id="searchForm"> 
+              <div class="inline-form">
+                <input type="text" id="searchText">
+                <button type="submit">Buscar</button><a style="margin-left:10px;cursor:pointer;text-decoration:underline;">Guardar Busqueda</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="pure-u-1-3"></div>
+      </header>
+      <aside class="filters pure-u-1-4">
+        <h3>Busquedas Guardadas
+          <ul id="saved"></ul>
+        </h3>
+        <h3>Categorias
+          <ul id="categorias">
+            <li><a class="disableClick" type="filter" filter="categories" href="#" data-filter="all">Todos</a></li>
+          </ul>
+        </h3>
+        <h3>Idioma
+          <ul id="idioma">
+            <li><a class="disableClick" type="filter" filter="lang" href="#" data-filter="all">Todos</a></li>
+          </ul>
+        </h3>
+        <h3>Publicación
+          <ul id="publicacion">
+            <li><a class="disableClick" href="#" type="filter" filter="time" data-filter="all">Todos</a></li>
+            <li><a href="#" filter="time" type="filter" data-filter="today">Hoy</a></li>
+            <li><a href="#" filter="time" type="filter" data-filter="week">Hace una semana</a></li>
+            <li><a href="#" filter="time" type="filter" data-filter="month">Hace un mes</a></li>
+            <li><a href="#" filter="time" type="filter" data-filter="year">Hace un año</a></li>
+          </ul>
+        </h3>
+        <h3>Presentación
+          <ul id="presentacion">
+            <li><a class="disableClick" type="filter" filter="edition" href="#" data-filter="all">Todos</a></li>
+          </ul>
+        </h3>
+      </aside>
+      <content class="content pure-u-3-4">
+        <div class="pure-u-5-5" id="content-books"></div>
+      </content>
+      <div class="pure-u-1">
+        <div id="pages"></div>
+      </div>
+      <footer class="pure-u-1"></footer>
+    </div>
+    <script src="/vendor/underscore/underscore-min.js"></script>
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/search-form.js"></script>
+    <script src="/scripts/side-menu.js"></script>
+    <script src="/scripts/content.js"></script>
+    <script src="/scripts/pages.js"></script>
+    <script src="/scripts/app.js"></script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,53 @@
+* {
+  font-family: "Proxima Nova";
+}
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+a {
+  color: #00f;
+}
+.disableClick {
+  pointer-events: none;
+  color: #000;
+  text-decoration: none;
+}
+.content {
+  display: flex;
+}
+.book-item {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px 5px;
+}
+.book-description {
+  font-size: 12px;
+  text-align: justify;
+}
+.book-title {
+  display: inline-block;
+  font-size: 13px;
+}
+#pages {
+  float: right;
+}
+.pageBackwards,
+.pageForward {
+  cursor: pointer;
+}
+.search-form {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 650px) {
+  .search-form {
+    display: none;
+  }
+}
+a[type="filter"],
+a[type="saved"] {
+  font-size: 15px;
+}
+ul {
+  list-style: none;
+}
